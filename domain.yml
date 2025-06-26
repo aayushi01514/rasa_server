@@ -6,9 +6,12 @@ intents:
   - ask_symptom
   - select_symptom
   - inform_symptoms
+  - find_nearby_clinics
+  - show_treatment
 
 entities:
   - symptom
+  - type
 
 slots:
   symptom:
@@ -17,6 +20,13 @@ slots:
     mappings:
       - type: from_entity
         entity: symptom
+
+  type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: type
 
 responses:
   utter_greet:
@@ -30,3 +40,4 @@ responses:
 actions:
   - action_ask_symptom
   - action_provide_treatment
+  - action_show_specific_treatment

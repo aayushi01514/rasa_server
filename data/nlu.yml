@@ -46,3 +46,12 @@ nlu:
       - મને [તાવ](symptom) અને [ઠંડ](symptom) છે
       - I have [vomiting](symptom), [cough](symptom), and [cold](symptom)
       - મારે [માથામાં દુખાવો](symptom) અને [ઉલ્ટી](symptom) છે
+
+  - intent: show_treatment
+    examples: |
+      - I want [allopathic](type) treatment for [fever](symptom)
+      - Give me [homeopathic](type) remedy for [cold](symptom)
+      - Show [alternative](type) solution for [cough](symptom)
+      - [allopathic](type) treatment for [fever](symptom)
+      - [homeopathic](type) for [cold](symptom)
+      - [alternative](type) remedy for [nausea](symptom)

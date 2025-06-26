@@ -27,3 +27,10 @@ rules:
     steps:
     - intent: inform_symptoms
     - action: action_provide_treatment
+
+  - rule: Show treatment based on type
+    steps:
+    - intent: show_treatment
+    - action: action_show_specific_treatment
+
+
