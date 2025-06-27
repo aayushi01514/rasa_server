@@ -21,4 +21,5 @@ COPY . .
 # Example: install extras if needed
 # RUN pip install spacy
 
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug", "--port", "${PORT:-5005}"]
+# CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug", "--port", "${PORT:-5005}"]
+CMD rasa run --enable-api --cors "*" --debug --port ${PORT:-5005}
